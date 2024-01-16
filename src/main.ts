@@ -1,12 +1,4 @@
 import { NestFactory } from '@nestjs/core';
-<<<<<<< HEAD
-import { AppModule } from './app.module';
-
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.listen(3000);
-}
-=======
 import { WinstonModule } from 'nest-winston';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
@@ -33,5 +25,4 @@ async function bootstrap() {
   await app.listen(POST);
 }
 
->>>>>>> d58a1e6 (Create Nest App. Add Login, Registration and Authorization)
 bootstrap();

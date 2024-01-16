@@ -1,13 +1,4 @@
 import { Module } from '@nestjs/common';
-<<<<<<< HEAD
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
-@Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
-=======
 import { SequelizeModule } from '@nestjs/sequelize';
 import { ConfigModule } from '@nestjs/config';
 import { UserModule } from './user/user.module';
@@ -39,6 +30,5 @@ import { AuthModule } from './auth/auth.module';
   ],
   controllers: [],
   providers: [],
->>>>>>> d58a1e6 (Create Nest App. Add Login, Registration and Authorization)
 })
 export class AppModule {}
